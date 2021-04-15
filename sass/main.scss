@@ -1,0 +1,138 @@
+$colour-primary:#9356dc;
+$colour-secondary:#FF79DA;
+$colour-tertiary:#99e2d0;
+
+
+* {
+    box-sizing: border-box;
+    margin: 3% 0;
+    padding: 0;
+}
+body {
+    /*background-color: $colour-primary;*/
+    width: 100%;
+}
+h2 {
+    margin: 10% 0 5% 5%;
+    font-size: 1.3em;
+}
+header {
+    margin-bottom: 3%;
+    img {
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+}
+aside {
+    background-color: lightgrey;
+    text-align: center;
+}
+.discover {
+    h1 {
+        font-size: 1.35em;
+        padding-top: 10%;
+    padding-bottom: 2%;
+    }
+    p {
+        opacity: 0.7;
+    }
+}
+.marker {
+    display: flex;
+    justify-content: center;
+    border: solid 1px darkgray;
+    padding: 3% 0;
+    font-weight: bold;
+    background-color: darkgray;
+    i {
+        margin-right: 5%;
+        margin-left: -10%;
+    }
+    p {
+        font-size: 1em;
+    } 
+}
+.button {
+    color: white;
+    background: linear-gradient(to bottom right,$colour-secondary,$colour-primary);
+    border-radius: 15px;
+    padding: 2%;
+    margin: 5% 0 13%;
+}
+
+nav {
+    margin: 0 5%;
+}
+.function {
+    display: flex;
+    align-items: baseline;
+    background-color: lightgrey;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 2% 0;
+    margin-bottom: 4%;
+    i {
+     padding: 0 10%;
+     color: grey;
+    }
+}
+.function_2 {
+    @extend.function;
+        margin-bottom: 25%;
+    }
+
+.fa-store:before {
+    font-size: 0.9em;
+}
+ul {
+    list-style-type: none;
+}
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color:$colour-primary;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 1%;
+    position: absolute;
+    left: 2%;
+}
+
+
+
+.container {
+    img {
+        width: 100%;
+        height: 80%;
+    }
+}
+.box_container {
+    height: 200px;
+    i {
+        height: 80%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+footer {
+    background-color: black;
+    img {
+        width: 100%;
+        object-fit: cover;
+        filter: invert(1);
+        -webkit-filter: invert(1);
+        -moz-filter: invert(1);
+        -o-filter: invert(1);
+        -ms-filter: invert(1);
+
+    }
+    a {
+        color: white;
+        list-style-type: none;
+        text-decoration: none;
+    }
+}

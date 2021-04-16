@@ -50,6 +50,7 @@ aside {
 .marker {
     display: flex;
     justify-content: center;
+    align-items: center;
     border: solid 1px darkgray;
     padding: 3% 0;
     font-weight: bold;
@@ -109,6 +110,7 @@ ul {
     padding-top: 1%;
     position: absolute;
     left: 2%;
+    margin-top: 2%;
 }
 
 #restaurants {

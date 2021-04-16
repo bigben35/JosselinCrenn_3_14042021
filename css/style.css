@@ -10,8 +10,18 @@ body {
 }
 
 h2 {
-  margin: 10% 0 5% 5%;
+  padding: 10% 0 5% 5%;
   font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 header {
@@ -105,22 +115,56 @@ ul {
   left: 2%;
 }
 
-.container img {
-  width: 100%;
-  height: 80%;
+#restaurants {
+  background-color: lightgrey;
+  margin-bottom: 0;
+  padding-bottom: 10%;
+}
+
+.container {
+  margin: 0 5%;
 }
 
 .box_container {
   height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 5%;
 }
-.box_container i {
-  height: 80%;
+
+img {
+  height: 70%;
   width: 100%;
   object-fit: cover;
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.new {
+  position: absolute;
+  right: 8%;
+  background-color: #99e2d0;
+}
+
+.subtitle {
+  margin: 0;
+  margin-left: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  margin: 0;
+}
+
+.heart {
+  padding-right: 6%;
 }
 
 footer {
   background-color: black;
+  margin-top: 0;
 }
 footer img {
   width: 100%;

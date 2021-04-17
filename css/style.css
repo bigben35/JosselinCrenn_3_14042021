@@ -205,4 +205,22 @@ footer a {
   font-size: 0.7em;
 }
 
+/*ajout css pages menu*/
+.menu {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.menu a {
+  margin-left: 5%;
+}
+.menu img {
+  margin-right: 25%;
+  margin-left: 15%;
+}
+
+.main_image img {
+  border-radius: 0;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -166,7 +166,8 @@ p {
 }
 .fa-heart:before {
     font-size: 1.2em;
-    color: lightgrey;
+    color: black;
+    opacity: 0.8;
 }
 
 footer {
@@ -217,13 +218,20 @@ footer {
         border-radius: 0;
     }
 }
-#main_section 
+#main_section {
+    position: relative;
+    margin-top: -40px;
+    z-index: 2;
+    background-color: #eff2f1;
+    border-radius: 25px;
+}
     
 
 .menu_title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10% 10% 2% 5%;
 }
 .title_menu {
     margin-left: 2%;
@@ -272,6 +280,7 @@ footer {
     margin-bottom: 10%;
     background: linear-gradient(to bottom right,$colour-secondary,$colour-primary);
     color: white;
+    margin-bottom: 20%;
 }
 main {
     background-color: #eff1f2;

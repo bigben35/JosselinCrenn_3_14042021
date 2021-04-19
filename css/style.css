@@ -1,16 +1,17 @@
 * {
   box-sizing: border-box;
-  margin: 3% 0;
+  margin: 0;
   padding: 0;
 }
 
 body {
   /*background-color: $colour-primary;*/
   width: 100%;
+  margin-top: 5%;
 }
 
 h2 {
-  padding: 10% 0 5% 5%;
+  padding: 10% 0 5% 0%;
   font-size: 1.3em;
 }
 
@@ -83,7 +84,7 @@ nav {
   border-radius: 10px;
   font-weight: bold;
   font-size: 0.9em;
-  padding: 2% 0;
+  padding: 5% 0;
   margin-bottom: 4%;
 }
 .function i, .function_2 i {
@@ -92,7 +93,7 @@ nav {
 }
 
 .function_2 {
-  margin-bottom: 25%;
+  margin-bottom: 15%;
 }
 
 .fa-store:before {
@@ -114,7 +115,6 @@ ul {
   padding-top: 1%;
   position: absolute;
   left: 2%;
-  margin-top: 2%;
 }
 
 #restaurants {
@@ -150,10 +150,11 @@ img {
   color: darkgreen;
   padding: 1% 3%;
   border-color: #99e2d0;
+  margin-top: 3%;
 }
 
 .subtitle {
-  margin: 0;
+  margin-top: 2%;
   margin-left: 3%;
   display: flex;
   justify-content: space-between;
@@ -198,7 +199,7 @@ footer a {
   margin: 0;
   display: flex;
   flex-direction: column;
-  padding: 6% 5%;
+  padding: 5%;
 }
 
 .fa-hands-helping:before {
@@ -221,6 +222,38 @@ footer a {
 
 .main_image img {
   border-radius: 0;
+}
+
+#main_section {
+  background-color: #dde4eb;
+  margin-bottom: 0;
+}
+
+.menu_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entree {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.plats {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5%;
+  align-items: center;
+  padding: 0 2%;
+  border-radius: 15px;
+  border: solid 1px white;
+  background-color: white;
+}
+
+.price {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 $colour-primary:#9356dc;
 $colour-secondary:#FF79DA;
 $colour-tertiary:#99e2d0;
+$colour-function:#efd7f6;
 
 
 * {
@@ -115,6 +116,12 @@ ul {
     padding-top: 1%;
     position: absolute;
     left: 2%;
+}
+nav li :hover {
+    background-color: $colour-function;
+    i {
+        color: $colour-primary;
+    }
 }
 
 #restaurants {

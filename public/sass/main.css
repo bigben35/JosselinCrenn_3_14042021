@@ -139,6 +139,14 @@ ul {
   left: 2%;
 }
 
+nav li :hover {
+  background-color: #efd7f6;
+}
+
+nav li :hover i {
+  color: #9356dc;
+}
+
 #restaurants {
   background-color: lightgrey;
   margin-bottom: 0;

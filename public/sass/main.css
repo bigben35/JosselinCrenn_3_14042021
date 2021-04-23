@@ -493,6 +493,7 @@ footer a {
 
 .menu_container {
   padding: 0 3%;
+  padding-bottom: 1px;
 }
 
 .menu_container p {
@@ -510,6 +511,28 @@ footer a {
   row-gap: 15px;
 }
 
+/*animation: meal 2s forwards;
+
+}
+@keyframes meal {
+    0% {
+        transform: translateY(-1);
+        opacity: 0;
+    }
+    100% {
+       transform: translateY(0);
+        opacity: 1;
+    }
+}
+.lunch:nth-child(1) {
+    animation-delay: 0.5s;
+}
+.lunch:nth-child(2) {
+    animation-delay: 1.5s;
+}
+.lunch:nth-child(3) {
+    animation-delay: 2.5s;
+}*/
 .plats {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,6 +549,104 @@ footer a {
   background-color: white;
 }
 
+.fade {
+  -webkit-animation: fadeIn 4s forwards;
+          animation: fadeIn 4s forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.fade_1 {
+  -webkit-animation: fadeIn 0.4s;
+          animation: fadeIn 0.4s;
+}
+
+.fade_2 {
+  -webkit-animation: fadeIn 0.8s;
+          animation: fadeIn 0.8s;
+}
+
+.fade_3 {
+  -webkit-animation: fadeIn 1.2s;
+          animation: fadeIn 1.2s;
+}
+
+.fade_4 {
+  -webkit-animation: fadeIn 1.6s;
+          animation: fadeIn 1.6s;
+}
+
+.fade_5 {
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+}
+
+.fade_6 {
+  -webkit-animation: fadeIn 2.4s;
+          animation: fadeIn 2.4s;
+}
+
+.fade_7 {
+  -webkit-animation: fadeIn 2.8s;
+          animation: fadeIn 2.8s;
+}
+
+.fade_8 {
+  -webkit-animation: fadeIn 3.2s;
+          animation: fadeIn 3.2s;
+}
+
+.fade_9 {
+  -webkit-animation: fadeIn 3.6s;
+          animation: fadeIn 3.6s;
+}
+
+@-webkit-keyframes menu {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(1);
+            transform: translateY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes menu {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(1);
+            transform: translateY(1);
+    opacity: 1;
+  }
+}
+
 .price {
   font-weight: bold;
   font-size: 0.8em;
@@ -536,17 +657,27 @@ footer a {
   font-size: 1em;
 }
 
+.check {
+  overflow: hidden;
+  border-radius: 0 10px 10px 0;
+  background-color: #99e2d0;
+  height: 100%;
+}
+
+.check i {
+  color: white;
+}
+
 .order {
   display: block;
   margin: auto;
   padding: 3% 12%;
   border-radius: 20px;
-  margin-top: 5%;
-  margin-bottom: 10%;
+  margin-top: 10%;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356dc));
   background: linear-gradient(to bottom right, #FF79DA, #9356dc);
   color: white;
-  margin-bottom: 20%;
+  margin-bottom: 18%;
 }
 
 main {

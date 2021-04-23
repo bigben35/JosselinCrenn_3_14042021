@@ -373,6 +373,7 @@ footer {
 }
 .menu_container {
     padding: 0 3%;
+    padding-bottom: 1px;
     p {
         font-size: 0.8em;
     }
@@ -380,9 +381,30 @@ footer {
 .lunch {
     display: flex;
     flex-direction: column;
-    row-gap: 15px;
+    row-gap: 15px;}
+    /*animation: meal 2s forwards;
 
 }
+@keyframes meal {
+    0% {
+        transform: translateY(-1);
+        opacity: 0;
+    }
+    100% {
+       transform: translateY(0);
+        opacity: 1;
+    }
+}
+.lunch:nth-child(1) {
+    animation-delay: 0.5s;
+}
+.lunch:nth-child(2) {
+    animation-delay: 1.5s;
+}
+.lunch:nth-child(3) {
+    animation-delay: 2.5s;
+}*/
+
 .plats {
     display: flex;
     justify-content: space-between;
@@ -391,6 +413,57 @@ footer {
     border-radius: 15px;
     border: solid 1px white;
     background-color: white;
+
+}
+.fade {
+    animation: fadeIn 4s forwards;
+}
+@keyframes fadeIn {
+    from {
+        transform: scale(0.2);
+      }
+      to {
+        transform: scale(1);
+      } }
+
+.fade_1 {
+    animation: fadeIn 0.4s;
+}
+.fade_2 {
+    animation: fadeIn 0.8s;
+}
+.fade_3 {
+    animation: fadeIn 1.2s;
+}
+.fade_4 {
+    animation: fadeIn 1.6s;
+}
+.fade_5 {
+    animation: fadeIn 2s;
+}
+.fade_6 {
+    animation: fadeIn 2.4s;
+}
+.fade_7 {
+    animation: fadeIn 2.8s;
+}
+.fade_8 {
+    animation: fadeIn 3.2s;
+}
+.fade_9 {
+    animation: fadeIn 3.6s;
+}
+
+@keyframes menu {
+    
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(1);
+        opacity: 1;
+    }
 }
 .price {
     font-weight: bold;
@@ -400,20 +473,28 @@ footer {
 .meal {
     font-size: 1em;
 }
+.check {
+    overflow: hidden;
+    border-radius: 0 10px 10px 0;
+    background-color: $colour-tertiary;
+    height: 100%;
+    & i {
+        color:white;
+        
+    }
+}
 .order {
     display: block;
     margin: auto;
     padding: 3% 12%;
     border-radius: 20px;
-    margin-top: 5%;
-    margin-bottom: 10%;
+    margin-top: 10%;
+    
     background: linear-gradient(to bottom right,$colour-secondary,$colour-primary);
     color: white;
-    margin-bottom: 20%;
+    margin-bottom: 18%;
 }
+
 main {
-    background-color: #eff1f2;
-
-
+   background-color: #eff1f2; 
 }
-

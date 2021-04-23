@@ -12,12 +12,134 @@ $colour-function:#efd7f6;
 body {
     /*background-color: $colour-primary;*/
     width: 100%;
+    height: 100%;
     margin-top: 5%;
     font-family: 'Roboto', 'sans-serif';
 }
 .logo .small_logo .big_title {
     font-family: 'Shrikhand', 'sans-serif';
 }
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 10;
+    animation: loader 3s forwards;
+    display: flex;
+    
+  }
+  @keyframes loader {
+    0% {
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
+/*.spin {
+        border-radius: 50px;
+        border: 6px solid rgba(26, 20, 20, 0.4);
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        animation: spin 1.5s linear infinite;
+        -webkit-animation: spin 1.5s linear infinite;
+        margin: auto;
+        top: -150px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        
+    }
+    @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+    }*/
+.loading-spinner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: flash 1s forwards;
+    -webkit-animation: flash 1s forwards;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.letter {
+    color:#fff;
+    font-size: 100px;
+    letter-spacing: 2px;
+    font-family: 'Shrikhand';
+    animation:  flash 1.5s linear infinite;
+    -webkit-animation: flash 1.5s linear infinite;
+}
+@media screen and (max-width:576px) {
+    .letter {
+        font-size: 50px;
+    }
+}
+@keyframes flash {
+    0% {
+        color: $colour-secondary;
+        text-shadow: 0 0 7px linear-gradient(to bottom right,$colour-secondary,$colour-primary);
+
+    }
+    50% {
+        color: $colour-primary;
+        text-shadow: 0 0 7px linear-gradient(to bottom right,$colour-secondary,$colour-primary);
+    }
+    80% {
+        color:$colour-secondary;
+        text-shadow: none;
+    }
+    100% {
+        color: $colour-primary;
+        text-shadow: 0 0 7px linear-gradient(to bottom right,$colour-secondary,$colour-primary);
+    }
+}
+.letter:nth-child(1) {
+    animation-delay: 100ms;
+  }
+.letter:nth-child(2) {
+    animation-delay: 200ms;
+  }
+.letter:nth-child(3) {
+    animation-delay: 300ms;
+  }
+.letter:nth-child(4) {
+    animation-delay: 400ms;
+  }
+.letter:nth-child(5) {
+    animation-delay: 500ms;
+  }
+.letter:nth-child(6) {
+    animation-delay: 600ms;
+  }
+.letter:nth-child(7) {
+    animation-delay: 700ms;
+  }
+.letter:nth-child(8) {
+    animation-delay: 800ms;
+  }
+.letter:nth-child(9) {
+    animation-delay: 900ms;
+  }
+.letter:nth-child(10) {
+    animation-delay: 1000ms;
+  }
 h2 {
     padding: 10% 0 5% 0%;
     font-size: 1.3em;

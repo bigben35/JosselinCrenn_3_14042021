@@ -8,12 +8,193 @@
 body {
   /*background-color: $colour-primary;*/
   width: 100%;
+  height: 100%;
   margin-top: 5%;
   font-family: 'Roboto', 'sans-serif';
 }
 
 .logo .small_logo .big_title {
   font-family: 'Shrikhand', 'sans-serif';
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 10;
+  -webkit-animation: loader 3s forwards;
+          animation: loader 3s forwards;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes loader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+/*.spin {
+        border-radius: 50px;
+        border: 6px solid rgba(26, 20, 20, 0.4);
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        animation: spin 1.5s linear infinite;
+        -webkit-animation: spin 1.5s linear infinite;
+        margin: auto;
+        top: -150px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        
+    }
+    @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+    }*/
+.loading-spinner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  animation: flash 1s forwards;
+  -webkit-animation: flash 1s forwards;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.letter {
+  color: #fff;
+  font-size: 100px;
+  letter-spacing: 2px;
+  font-family: 'Shrikhand';
+  animation: flash 1.5s linear infinite;
+  -webkit-animation: flash 1.5s linear infinite;
+}
+
+@media screen and (max-width: 576px) {
+  .letter {
+    font-size: 50px;
+  }
+}
+
+@-webkit-keyframes flash {
+  0% {
+    color: #FF79DA;
+    text-shadow: 0 0 7px linear-gradient(to bottom right, #FF79DA, #9356dc);
+  }
+  50% {
+    color: #9356dc;
+    text-shadow: 0 0 7px linear-gradient(to bottom right, #FF79DA, #9356dc);
+  }
+  80% {
+    color: #FF79DA;
+    text-shadow: none;
+  }
+  100% {
+    color: #9356dc;
+    text-shadow: 0 0 7px linear-gradient(to bottom right, #FF79DA, #9356dc);
+  }
+}
+
+@keyframes flash {
+  0% {
+    color: #FF79DA;
+    text-shadow: 0 0 7px linear-gradient(to bottom right, #FF79DA, #9356dc);
+  }
+  50% {
+    color: #9356dc;
+    text-shadow: 0 0 7px linear-gradient(to bottom right, #FF79DA, #9356dc);
+  }
+  80% {
+    color: #FF79DA;
+    text-shadow: none;
+  }
+  100% {
+    color: #9356dc;
+    text-shadow: 0 0 7px linear-gradient(to bottom right, #FF79DA, #9356dc);
+  }
+}
+
+.letter:nth-child(1) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.letter:nth-child(2) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.letter:nth-child(3) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.letter:nth-child(4) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.letter:nth-child(5) {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.letter:nth-child(6) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.letter:nth-child(7) {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
+.letter:nth-child(8) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.letter:nth-child(9) {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+
+.letter:nth-child(10) {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
 }
 
 h2 {

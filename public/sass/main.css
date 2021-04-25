@@ -385,6 +385,11 @@ p {
 
 .heart {
   padding-right: 6%;
+  cursor: pointer;
+}
+
+.heart:hover {
+  color: linear-gradient(to top right, #FF79DA, #9356dc);
 }
 
 .fa-heart:before {
@@ -543,10 +548,24 @@ footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3% 5% 3% 3%;
   border-radius: 15px;
-  border: solid 1px white;
   background-color: white;
+  height: 60px;
+  padding-left: 3%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.plats:hover {
+  -webkit-box-shadow: 0 5px 15px 0 #bcc2c6;
+          box-shadow: 0 5px 15px 0 #bcc2c6;
+}
+
+.heart_1 {
+  cursor: pointer;
 }
 
 .fade {
@@ -650,22 +669,32 @@ footer a {
 .price {
   font-weight: bold;
   font-size: 0.8em;
-  padding-top: 5%;
+  padding: 5% 6% 0 3%;
 }
 
 .meal {
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .check {
-  overflow: hidden;
+  /*overflow: hidden;*/
   border-radius: 0 10px 10px 0;
   background-color: #99e2d0;
-  height: 100%;
+  /*height: 100%;*/
+  /*padding: 8% 7%;*/
+  padding: 7% 7% 6% 7%;
+  right: 3%;
+  visibility: hidden;
+  position: absolute;
 }
 
 .check i {
   color: white;
+  height: 100%;
+  -webkit-animation: rotate 0.5s both;
+          animation: rotate 0.5s both;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .order {
@@ -674,6 +703,7 @@ footer a {
   padding: 3% 12%;
   border-radius: 20px;
   margin-top: 10%;
+  cursor: pointer;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356dc));
   background: linear-gradient(to bottom right, #FF79DA, #9356dc);
   color: white;

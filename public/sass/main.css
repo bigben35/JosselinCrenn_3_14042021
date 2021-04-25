@@ -562,6 +562,8 @@ footer a {
 .plats:hover {
   -webkit-box-shadow: 0 5px 15px 0 #bcc2c6;
           box-shadow: 0 5px 15px 0 #bcc2c6;
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
 }
 
 .heart_1 {
@@ -708,6 +710,13 @@ footer a {
   background: linear-gradient(to bottom right, #FF79DA, #9356dc);
   color: white;
   margin-bottom: 18%;
+}
+
+.order:hover {
+  -webkit-box-shadow: 0 5px 15px 0 #9356dc;
+          box-shadow: 0 5px 15px 0 #9356dc;
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
 }
 
 main {

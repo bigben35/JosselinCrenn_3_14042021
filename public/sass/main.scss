@@ -424,6 +424,7 @@ footer {
     cursor: pointer;
     &:hover {
         box-shadow: 0 5px 15px 0 #bcc2c6;
+        filter: brightness(1.2);
     }
 }
 .heart_1 {
@@ -515,6 +516,10 @@ footer {
     background: linear-gradient(to bottom right,$colour-secondary,$colour-primary);
     color: white;
     margin-bottom: 18%;
+        &:hover {
+            box-shadow: 0 5px 15px 0 $colour-primary;
+            filter: brightness(1.1);
+        }
 }
 
 main {

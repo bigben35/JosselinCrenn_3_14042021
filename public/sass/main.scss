@@ -197,6 +197,11 @@ aside {
     border-radius: 15px;
     padding: 2%;
     margin: 5% 0 13%;
+    cursor: pointer;
+        &:hover {
+            box-shadow: 0 5px 15px 0 $colour-primary;
+            filter: brightness(1.1);
+        }
 }
 
 nav {
@@ -215,6 +220,10 @@ nav {
      padding: 0 10%;
      color: grey;
     }
+    /*&:hover {
+        box-shadow: 0 5px 15px 0 #bcc2c6;
+        filter: brightness(1.05);
+    }*/
 }
 .function_2 {
     @extend.function;
@@ -238,12 +247,15 @@ ul {
     padding-top: 1%;
     position: absolute;
     left: 2%;
-}
+    
+    }
 nav li :hover {
     background-color: $colour-function;
     i {
         color: $colour-primary;
+        
     }
+    
 }
 
 #restaurants {

@@ -269,6 +269,14 @@ aside {
   border-radius: 15px;
   padding: 2%;
   margin: 5% 0 13%;
+  cursor: pointer;
+}
+
+.button:hover {
+  -webkit-box-shadow: 0 5px 15px 0 #9356dc;
+          box-shadow: 0 5px 15px 0 #9356dc;
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
 }
 
 nav {
@@ -288,6 +296,10 @@ nav {
   font-size: 0.9em;
   padding: 5% 0;
   margin-bottom: 4%;
+  /*&:hover {
+        box-shadow: 0 5px 15px 0 #bcc2c6;
+        filter: brightness(1.05);
+    }*/
 }
 
 .function i, .function_2 i {

@@ -317,12 +317,12 @@ p {
   margin: 0;
 }
 
-.heart {
+.love {
   padding-right: 6%;
   cursor: pointer;
 }
-.heart:hover {
-  color: linear-gradient(to top right, #FF79DA, #9356dc);
+.love:hover {
+  opacity: 0;
 }
 
 .fa-heart:before {

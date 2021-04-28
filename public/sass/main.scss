@@ -305,11 +305,11 @@ nav li :hover {
 p {
     margin: 0;
 }
-.heart {
+.love {
     padding-right: 6%;
     cursor: pointer;
     &:hover {
-        color: linear-gradient(to top right,$colour-secondary,$colour-primary);
+        opacity: 0;
     }
 }
 .fa-heart:before {

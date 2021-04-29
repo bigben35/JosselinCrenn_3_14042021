@@ -4,6 +4,7 @@ $colour-primary:#9356dc;
 $colour-secondary:#FF79DA;
 $colour-tertiary:#99e2d0;
 $colour-function:#efd7f6;
+$colour-background: #e9e9e9;
 
 
 * {
@@ -165,7 +166,7 @@ header {
     }
 }
 aside {
-    background-color: lightgrey;
+    background-color: $colour-background;
     text-align: center;
 }
 .discover {
@@ -213,7 +214,7 @@ nav {
 .function {
     display: flex;
     align-items: baseline;
-    background-color: lightgrey;
+    background-color: $colour-background;
     border-radius: 10px;
     font-weight: bold;
     font-size: 0.9em;
@@ -262,7 +263,7 @@ nav li :hover {
 }
 
 #restaurants {
-    background-color: lightgrey;
+    background-color: $colour-background;
     margin-bottom: 0;
     padding-bottom: 10%;
 }
@@ -305,10 +306,15 @@ nav li :hover {
 p {
     margin: 0;
 }
+.love .far.fa-heart, .love, .love .fas.fa-heart:hover {
+    transition: 0.5s 0s linear;
+  }
 .love {
     padding-right: 6%;
     cursor: pointer;
-    &:hover {
+    position: relative;
+
+    &.far.fa-heart:hover {
         opacity: 0;
     }
 }
@@ -316,6 +322,17 @@ p {
     font-size: 1.2em;
     color: black;
     opacity: 0.8;
+}
+i.fas.fa-heart {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    &:hover {
+        opacity: 1;
+        z-index: 999;
+        background: linear-gradient($colour-secondary,$colour-primary);
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 footer {
@@ -370,7 +387,7 @@ footer {
     position: relative;
     margin-top: -40px;
     z-index: 2;
-    background-color: #eff2f1;
+    background-color: $colour-background;
     border-radius: 25px;
 }
     
@@ -441,9 +458,6 @@ footer {
         box-shadow: 0 5px 15px 0 #bcc2c6;
         filter: brightness(1.2);
     }
-}
-.heart_1 {
-    cursor: pointer;
 }
 
 .fade {

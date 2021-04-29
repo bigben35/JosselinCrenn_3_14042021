@@ -171,7 +171,7 @@ header img {
 }
 
 aside {
-  background-color: lightgrey;
+  background-color: #e9e9e9;
   text-align: center;
 }
 
@@ -221,7 +221,7 @@ nav {
 .function, .function_2 {
   display: flex;
   align-items: baseline;
-  background-color: lightgrey;
+  background-color: #e9e9e9;
   border-radius: 10px;
   font-weight: bold;
   font-size: 0.9em;
@@ -270,7 +270,7 @@ nav li :hover i {
 }
 
 #restaurants {
-  background-color: lightgrey;
+  background-color: #e9e9e9;
   margin-bottom: 0;
   padding-bottom: 10%;
 }
@@ -317,11 +317,16 @@ p {
   margin: 0;
 }
 
+.love .far.fa-heart, .love, .love .fas.fa-heart:hover {
+  transition: 0.5s 0s linear;
+}
+
 .love {
   padding-right: 6%;
   cursor: pointer;
+  position: relative;
 }
-.love:hover {
+.love.far.fa-heart:hover {
   opacity: 0;
 }
 
@@ -329,6 +334,18 @@ p {
   font-size: 1.2em;
   color: black;
   opacity: 0.8;
+}
+
+i.fas.fa-heart {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+}
+i.fas.fa-heart:hover {
+  opacity: 1;
+  z-index: 999;
+  background: linear-gradient(#FF79DA, #9356dc);
+  -webkit-text-fill-color: transparent;
 }
 
 footer {
@@ -384,7 +401,7 @@ footer a {
   position: relative;
   margin-top: -40px;
   z-index: 2;
-  background-color: #eff2f1;
+  background-color: #e9e9e9;
   border-radius: 25px;
 }
 
@@ -457,10 +474,6 @@ footer a {
 .plats:hover {
   box-shadow: 0 5px 15px 0 #bcc2c6;
   filter: brightness(1.2);
-}
-
-.heart_1 {
-  cursor: pointer;
 }
 
 .fade {

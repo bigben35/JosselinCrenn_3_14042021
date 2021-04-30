@@ -303,7 +303,7 @@ img {
   border-radius: 10px 10px 0 0;
 }
 
-.new {
+.new_1, .new_2 {
   position: absolute;
   right: 8%;
   background-color: #99e2d0;
@@ -612,6 +612,82 @@ footer a {
 
 main {
   background-color: #eff1f2;
+}
+
+/*MEDIA QUERRIES*/
+/*max-width:576px*/
+@media screen and (max-width: 576px) {
+  .letter {
+    font-size: 50px;
+  }
+}
+/*min-width:768px*/
+@media screen and (min-width: 768px) {
+  .circle {
+    padding-top: 0.5%;
+  }
+
+  .contact {
+    text-align: center;
+  }
+  .contact img {
+    margin: auto;
+    width: 45%;
+    padding: 2% 0 4%;
+  }
+  .contact i {
+    padding-right: 1%;
+  }
+
+  .subtitle {
+    margin-top: 1%;
+  }
+}
+/*MIN WIDTH:1024px*/
+@media screen and (min-width: 1024px) {
+  .circle {
+    padding-top: 0.3%;
+  }
+
+  .function_2 {
+    margin-bottom: 10%;
+  }
+
+  #restaurants {
+    padding-bottom: 5%;
+  }
+
+  .container {
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    column-gap: 50px;
+  }
+  .container h2 {
+    width: 100%;
+    padding-top: 6%;
+  }
+  .container .box_container {
+    width: 45%;
+  }
+
+  .new_1 {
+    left: 34%;
+    margin-top: 2%;
+  }
+
+  .new_2 {
+    right: 6.5%;
+    margin-top: 2%;
+  }
+
+  .contact {
+    padding: 0 0 5% 0;
+  }
+  .contact img {
+    width: 40%;
+    padding: 5% 0 4%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

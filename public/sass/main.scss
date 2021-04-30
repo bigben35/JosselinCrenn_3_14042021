@@ -458,6 +458,9 @@ footer {
         box-shadow: 0 5px 15px 0 #bcc2c6;
         filter: brightness(1.2);
     }
+    &.check {
+        transform: rotate(180deg);
+    }
 }
 
 .fade {
@@ -526,7 +529,7 @@ footer {
     /*padding: 8% 7%;*/
     padding: 7% 7% 6% 7%;
     right: 3%;
-    visibility: hidden;
+    /*visibility: hidden;*/
     position: absolute;
     & i {
         color:white;
@@ -535,6 +538,27 @@ footer {
     transform: rotate(180deg);
  }
 }
+@keyframes check {
+    0% {
+        transform: rotate(-90deg);
+      }
+      20% {
+        transform: rotate(-75deg) scale(1.03);
+      }
+      40% {
+        transform: rotate(-60deg) scale(1.08);
+      }
+      60% {
+        transform: rotate(-45deg) scale(1.15);
+      }
+      80% {
+        transform: rotate(-30deg) scale(1.08);
+      }
+      100% {
+        transform: rotate(5deg) scale(1);
+      }
+    }
+
 .order {
     display: block;
     margin: auto;

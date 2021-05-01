@@ -286,8 +286,7 @@ nav li :hover i {
   border-radius: 10px;
   margin-bottom: 5%;
 }
-
-img {
+.box_container img {
   height: 70%;
   width: 100%;
   object-fit: cover;
@@ -704,6 +703,7 @@ main {
   .new_1 {
     left: 34%;
     margin-top: 2%;
+    width: 12%;
   }
 
   .new_2 {
@@ -765,12 +765,14 @@ main {
     left: 17%;
     margin-top: 1%;
     padding: 0.5% 1.5%;
+    width: 7%;
   }
 
   .new_2 {
     left: 40.5%;
     margin-top: 1%;
     padding: 0.5% 1.5%;
+    width: 7%;
   }
 
   .contact {

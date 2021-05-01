@@ -276,8 +276,7 @@ nav li :hover {
     background-color: white;
     border-radius: 10px;
     margin-bottom: 5%;
-}
-
+    
     img {
         height: 70%;
         width: 100%;
@@ -285,6 +284,7 @@ nav li :hover {
         margin: 0;
         border-radius: 10px 10px 0 0;
     }
+}
  
 .new_1, .new_2 {
     position: absolute;
@@ -675,6 +675,7 @@ main {
     .new_1 {
         left: 34%;
         margin-top: 2%;
+        width: 12%;
     }
     .new_2 {
         right: 6.5%;
@@ -739,11 +740,13 @@ nav {
     left: 17%;
     margin-top: 1%;
     padding: 0.5% 1.5%;
+    width: 7%;
 }
 .new_2 {
     left: 40.5%;
     margin-top: 1%;
     padding: 0.5% 1.5%;
+    width: 7%;
 }
 .contact {
         padding-bottom: 2%;

@@ -1,12 +1,4 @@
-header {
-  margin-bottom: 3%;
-}
-header img {
-  width: 50%;
-  display: block;
-  margin: auto;
-}
-
+/*@import "./Layout/_header.scss";*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -646,6 +638,10 @@ main {
 }
 /*MIN WIDTH:1024px*/
 @media screen and (min-width: 1024px) {
+  body {
+    margin-top: 2%;
+  }
+
   header img {
     width: 40%;
   }

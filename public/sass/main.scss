@@ -1,4 +1,4 @@
-@import "./Layout/_header.scss";
+/*@import "./Layout/_header.scss";*/
 
 $colour-primary:#9356dc;
 $colour-secondary:#FF79DA;
@@ -617,7 +617,10 @@ main {
 
                 /*MIN WIDTH:1024px*/
 @media screen and (min-width:1024px) {
-    
+    body {
+        margin-top: 2%;
+    }
+
     header img {
         width: 40%;
     }

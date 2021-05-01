@@ -594,6 +594,7 @@ main {
 @media screen and (min-width:768px) {
     .circle {
         padding-top: 0.5%;
+        left: 3.5%;
     }
     .contact {
         text-align: center;
@@ -617,11 +618,40 @@ main {
                 /*MIN WIDTH:1024px*/
 @media screen and (min-width:1024px) {
     
-    .circle {
-        padding-top: 0.3%;
+    header img {
+        width: 40%;
     }
-    .function_2 {
-        margin-bottom: 10%;
+    .marker {
+        padding: 2%;
+    }
+    .discover h1 {
+        padding: 4% 0 2%;
+    }
+    .button {
+        margin: 5%;
+    }
+    nav h2 {
+        padding: 5% 0;
+    }
+    ul {
+        display: flex;
+        column-gap: 5%;
+        margin-bottom: 5%;
+        & li {
+            width: 30%;
+        }
+    }
+    
+    .function, .function_2 {
+        margin-bottom: 0;
+        & .circle {
+            position: relative;
+            left: -4%;
+            padding-top: 1%;
+        }
+        & i {
+            padding: 0 7%;
+        }
     }
     #restaurants {
         padding-bottom: 5%;
@@ -648,11 +678,76 @@ main {
         margin-top: 2%;
     }
     .contact {
-        padding: 0 0 5% 0;
+        padding: 0 0 3% 0;
         & img {
-        width: 40%;
-        padding: 5% 0 4%;
+        width: 30%;
+        padding: 3% 0 2%;
     }
     
+}
+}
+
+
+                    /*MIN-WIDTH:1440px*/
+
+@media screen and (min-width:1440px) {
+    
+header {
+    margin-bottom: 1%;
+    & img {
+        width: 25%;
+    }
+}
+.discover {
+    & .marker {
+        padding: 1%;
+    }
+    & h1 {
+        padding: 2% 0 1%;
+    }
+
+}
+.button {
+    margin: 2%;
+}
+nav {
+    h2 {
+        padding: 3% 0;
+    }
+}
+.function, .function_2 {
+    padding: 5% 10%;
+    & .circle {
+        left: -15%;
+    }
+}
+#restaurants {
+    padding-bottom: 0;
+}
+.container {
+    h2 {
+        padding: 3% 0;
+    }
+    & .box_container {
+        width: 21%;
+    }
+}
+.new_1 {
+    left: 17%;
+    margin-top: 1%;
+    padding: 0.5% 1.5%;
+}
+.new_2 {
+    left: 40.5%;
+    margin-top: 1%;
+    padding: 0.5% 1.5%;
+}
+.contact {
+        padding-bottom: 2%;
+    
+    img {
+        width: 20%;
+        padding: 2% 0 1%;
+    }
 }
 }

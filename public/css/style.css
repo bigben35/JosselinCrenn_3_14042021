@@ -564,6 +564,7 @@ footer a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.5s ease-in-out;
 }
 .check_1 i, .check_2 i, .check_3 i {
   color: white;
@@ -725,7 +726,7 @@ main {
   }
 
   .check_1, .check_2, .check_3 {
-    padding: 2%;
+    padding: 1.9% 2%;
     right: 12%;
   }
 
@@ -891,16 +892,16 @@ main {
 
   .check_1 {
     right: 67%;
-    padding: 1.4%;
+    padding: 1.35%;
   }
 
   .check_2 {
     right: 36%;
-    padding: 1.4%;
+    padding: 1.35%;
   }
 
   .check_3 {
-    padding: 1.4%;
+    padding: 1.35%;
     right: 5.8%;
   }
 

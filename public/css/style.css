@@ -479,7 +479,7 @@ footer a {
   box-shadow: 0 5px 15px 0 #bcc2c6;
   filter: brightness(1.2);
 }
-.plats.check {
+.plats.check_1, .plats.check_2, .plats.check_3 {
   transform: rotate(180deg);
 }
 
@@ -551,24 +551,27 @@ footer a {
   font-size: 0.9em;
 }
 
-.check {
+.check_1, .check_2, .check_3 {
   /*overflow: hidden;*/
   border-radius: 0 10px 10px 0;
   background-color: #99e2d0;
   /*height: 100%;*/
   /*padding: 8% 7%;*/
-  padding: 7% 7% 6% 7%;
+  padding: 7%;
   right: 3%;
   /*visibility: hidden;*/
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.check i {
+.check_1 i, .check_2 i, .check_3 i {
   color: white;
   height: 100%;
   animation: rotate 0.5s both;
   transform: rotate(180deg);
 }
-.check:hover {
+.check_1:hover, .check_2:hover, .check_3:hover {
   visibility: visible;
 }
 
@@ -653,10 +656,10 @@ main {
     padding: 5% 6% 3% 3%;
   }
 
-  .check {
-    padding: 0.5% 2% 4.5% 4%;
+  .check_1, .check_2, .check_3 {
+    padding: 2.5%;
   }
-  .check i {
+  .check_1 i, .check_2 i, .check_3 i {
     font-size: 1.4em;
   }
 
@@ -721,8 +724,8 @@ main {
     padding: 4% 0 2%;
   }
 
-  .check {
-    padding: 2% 2%;
+  .check_1, .check_2, .check_3 {
+    padding: 2%;
     right: 12%;
   }
 
@@ -822,10 +825,16 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    column-gap: 3%;
+    margin: 0 5%;
   }
 
   .lunch {
-    width: 25%;
+    width: 31%;
+  }
+
+  .title_menu {
+    padding: 0 0 5% 0;
   }
 
   .order {
@@ -878,6 +887,21 @@ main {
     margin-top: 1%;
     padding: 0.5% 1.5%;
     width: 7%;
+  }
+
+  .check_1 {
+    right: 67%;
+    padding: 1.4%;
+  }
+
+  .check_2 {
+    right: 36%;
+    padding: 1.4%;
+  }
+
+  .check_3 {
+    padding: 1.4%;
+    right: 5.8%;
   }
 
   .contact {

@@ -12,6 +12,9 @@ $colour-background: #e9e9e9;
     margin: 0;
     padding: 0;
 }
+html {
+    overflow-y: scroll;
+}
 body {
     /*background-color: $colour-primary;*/
     width: 100%;
@@ -284,6 +287,7 @@ nav li :hover {
         margin: 0;
         border-radius: 10px 10px 0 0;
     }
+
 }
  
 .new_1, .new_2 {
@@ -295,6 +299,7 @@ nav li :hover {
     padding: 1% 3%;
     border-color: $colour-tertiary;
     margin-top: 3%;
+    
 }   
 .subtitle {
     margin-top: 2%;
@@ -380,7 +385,7 @@ footer {
 }
 .main_image {
     img {
-        border-radius: 0;
+        width: 100%;
     }
 }
 #main_section {
@@ -537,8 +542,11 @@ footer {
     animation: rotate 0.5s both;
     transform: rotate(180deg);
  }
+    &:hover {
+     visibility: visible;
+ }
 }
-@keyframes check {
+@keyframes rotate {
     0% {
         transform: rotate(-90deg);
       }
@@ -592,9 +600,47 @@ main {
 
                 /*min-width:768px*/
 @media screen and (min-width:768px) {
+
+    .main_image {
+        & img {
+        height: 350px;
+        object-fit: cover;
+        }
+      }
+      .menu {
+          i {
+              font-size: 1.5em;
+          }
+      }
+      .menu_title {
+        padding: 6% 10% 0% 5%;
+        & .big_title {
+            font-size: 2.3em;
+        }
+        & i {
+            font-size: 1.7em;
+        }
+      }
+      .title_menu {
+        padding: 5% 0;
+      }
     .circle {
         padding-top: 0.5%;
         left: 3.5%;
+    }
+    .price {
+        padding: 5% 6% 3% 3%;
+      }
+    .check {
+        padding: 0.5% 2% 4.5% 4%;
+        & i {
+            font-size: 1.4em;
+        }
+      }
+    .order {
+        margin: 10% auto;
+        font-size: 1.2em;
+        font-weight: bold;
     }
     .contact {
         text-align: center;
@@ -624,11 +670,35 @@ main {
     header img {
         width: 40%;
     }
+    .menu {
+        & img {
+          margin-right: 33%;
+          margin-left: 20%;
+        }
+        & i {
+        font-size: 1.5em;
+        }
+      }
+    .menu_title {
+        padding: 6% 31% 0% 33%;
+        & .big_title {
+            font-size: 2.8em;
+            font-style: italic;
+        }
+    }
+    .menu_container {
+        padding: 0 12%;
+        padding-bottom: 1px;
+    }
     .marker {
         padding: 2%;
     }
     .discover h1 {
         padding: 4% 0 2%;
+    }
+    .check {
+        padding: 2% 2%;
+        right: 12%;
     }
     .button {
         margin: 5%;
@@ -701,6 +771,34 @@ header {
     & img {
         width: 25%;
     }
+    & i {
+        font-size: 1.8em;
+    }
+}
+.menu {
+    img {
+        margin-right: 38%;
+        margin-left: 21%;
+    }
+}
+.main_image {
+    width: 80%;
+    margin: auto;
+}
+.menu_title {
+    padding: 4% 31% 4% 33%;
+}
+.menu_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.lunch {
+    width: 25%;
+}
+.order {
+    margin: 5% auto;
+    padding: 2% 6%;
 }
 .discover {
     & .marker {

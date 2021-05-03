@@ -323,15 +323,23 @@ p {
 
 .love .far.fa-heart, .love, .love .fas.fa-heart:hover {
   transition: 0.5s 0s linear;
+  /*background-clip: text;*/
+  /*-webkit-text-fill-color: transparent;*/
 }
 
 .love {
   padding-right: 6%;
   cursor: pointer;
   position: relative;
-}
-.love.far.fa-heart:hover {
-  opacity: 0;
+  /*&.far.fa-heart:hover {
+      opacity: 0;
+  }
+  &.fas.fa.heart:hover {
+      opacity: 1;
+      background-clip: text;
+      display: block;
+      -webkit-text-fill-color: transparent;
+  }*/
 }
 
 .fa-heart:before {
@@ -350,6 +358,7 @@ i.fas.fa-heart:hover {
   z-index: 999;
   background: linear-gradient(#FF79DA, #9356dc);
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 footer {
@@ -476,10 +485,16 @@ footer a {
   cursor: pointer;
 }
 .plats:hover {
-  box-shadow: 0 5px 15px 0 #bcc2c6;
+  box-shadow: 0 5px 15px 0 #96999b;
   filter: brightness(1.2);
 }
-.plats.check_1, .plats.check_2, .plats.check_3 {
+.plats:hover .price {
+  transform: translateX(-55px);
+}
+.plats:hover .check_1, .plats.check_2, .plats.check_3 {
+  visibility: visible;
+}
+.plats:hover i {
   transform: rotate(180deg);
 }
 
@@ -558,8 +573,8 @@ footer a {
   /*height: 100%;*/
   /*padding: 8% 7%;*/
   padding: 7%;
-  right: 3%;
-  /*visibility: hidden;*/
+  right: 0;
+  visibility: hidden;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -569,8 +584,9 @@ footer a {
 .check_1 i, .check_2 i, .check_3 i {
   color: white;
   height: 100%;
-  animation: rotate 0.5s both;
-  transform: rotate(180deg);
+  /*animation: rotate 0.5s both;*/
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(360deg);
 }
 .check_1:hover, .check_2:hover, .check_3:hover {
   visibility: visible;
@@ -578,13 +594,13 @@ footer a {
 
 @keyframes rotate {
   0% {
-    transform: rotate(-90deg);
+    transform: rotate(-360deg);
   }
   20% {
-    transform: rotate(-75deg) scale(1.03);
+    transform: rotate(-120deg) scale(1.03);
   }
   40% {
-    transform: rotate(-60deg) scale(1.08);
+    transform: rotate(-90deg) scale(1.08);
   }
   60% {
     transform: rotate(-45deg) scale(1.15);
@@ -892,16 +908,16 @@ main {
 
   .check_1 {
     right: 67%;
-    padding: 1.35%;
+    padding: 1.32%;
   }
 
   .check_2 {
     right: 36%;
-    padding: 1.35%;
+    padding: 1.32%;
   }
 
   .check_3 {
-    padding: 1.35%;
+    padding: 1.32%;
     right: 5.8%;
   }
 

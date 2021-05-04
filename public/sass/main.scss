@@ -373,7 +373,11 @@ p {
        //background-clip: text;
     }
 
-    
+.love_1 {
+    padding-right: 6%;
+    cursor: pointer;
+    position: relative;
+}   
 .love {
     /*padding-right: 6%;*/
     cursor: pointer;
@@ -476,7 +480,7 @@ footer {
     font-weight: 100;
     font-size: 1em;
     border-bottom: 3px solid $colour-tertiary;
-    width: 14%;
+    width: 40px;
     padding-bottom: 1%;
     
 }
@@ -544,11 +548,27 @@ footer {
         transform: translateX(-40px);
     
     }
-    &:hover .check {
+    &:hover .check_1 {
         visibility: visible;
         width: 60px;
     }
-    &:hover .check i {
+    &:hover .check_2 {
+        visibility: visible;
+        width: 60px;
+    }
+    &:hover .check_3 {
+        visibility: visible;
+        width: 60px;
+    }
+    &:hover .check_1 i {
+        animation: rotate 0.4s ease-in;
+        animation-delay: 0.2s;
+    }
+    &:hover .check_2 i {
+        animation: rotate 0.4s ease-in;
+        animation-delay: 0.2s;
+    }
+    &:hover .check_3 i {
         animation: rotate 0.4s ease-in;
         animation-delay: 0.2s;
     }
@@ -623,7 +643,7 @@ footer {
     overflow: hidden;
     white-space: nowrap;
 }
-.check {
+.check_1, .check_2, .check_3 {
     /*overflow: hidden;*/
    /* border-radius: 0 10px 10px 0;
     background-color: $colour-tertiary;
@@ -691,22 +711,22 @@ footer {
 }
 @keyframes rotate {
     0% {
-        transform: rotate(-360deg);
+        transform: rotate(-360deg) scale(1);
       }
       20% {
-        transform: rotate(-180deg) ;
+        transform: rotate(-180deg) scale(1.1);
       }
       40% {
-        transform: rotate(-120deg) ;
+        transform: rotate(-120deg) scale(1.2) ;
       }
       60% {
-        transform: rotate(-80deg) ;
+        transform: rotate(-80deg) scale(1.1);
       }
       80% {
-        transform: rotate(-40deg);
+        transform: rotate(-40deg) scale(1.05);
       }
       100% {
-        transform: rotate(0deg);
+        transform: rotate(0deg) scale(1);
       }
     }
 
@@ -765,7 +785,7 @@ main {
         }
       }
       .title_menu {
-        padding: 5% 0 3%;
+        padding: 5% 0 1%;
       }
       
     .circle {
@@ -776,7 +796,7 @@ main {
         padding: 2% 0 0;
         right: 60px;
       }
-    .check {
+    .check_1, .check_2, .check_3 {
         /*padding: 2.5%;*/
         & i {
             font-size: 1.4em;
@@ -825,7 +845,7 @@ main {
         }
       }
     .menu_title {
-        padding: 6% 31% 0% 33%;
+        padding: 6% 28% 0% 30%;
         & .big_title {
             font-size: 2.8em;
             font-style: italic;
@@ -841,10 +861,7 @@ main {
     .discover h1 {
         padding: 4% 0 2%;
     }
-    .check {
-        padding: 1.9% 2%;
-        right: 12%;
-    }
+    
     .button {
         margin: 5%;
     }
@@ -903,6 +920,12 @@ main {
         padding: 3% 0 2%;
     }
     
+}
+.price {
+    right: 160px;
+}
+.plats:hover .price {
+    right: 40px;
 }
 }
 

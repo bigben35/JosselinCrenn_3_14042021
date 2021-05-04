@@ -922,7 +922,7 @@ main {
     right: 30px;
   }
   .plats:hover .check {
-    width: 15%;
+    width: 9%;
   }
 }
 /*MIN-WIDTH:1440px*/
@@ -1037,7 +1037,9 @@ main {
   .price_3 {
     right: 110px;
   }
-
+  .plats:hover .check {
+    width: 15%;
+  }
   .plats:hover .price_1 {
     left: 370px;
     padding-top: 1%;

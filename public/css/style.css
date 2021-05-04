@@ -912,17 +912,17 @@ main {
     padding-top: 1%;
   }
 
-  .plats:hover.price_1 {
+  .plats:hover .price_1 {
     right: 30px;
   }
-  .plats:hover.price_2 {
+  .plats:hover .price_2 {
     right: 30px;
   }
-  .plats:hover.price_3 {
+  .plats:hover .price_3 {
     right: 30px;
   }
-  .plats:hover.check {
-    width: 10%;
+  .plats:hover .check {
+    width: 15%;
   }
 }
 /*MIN-WIDTH:1440px*/
@@ -1026,11 +1026,11 @@ main {
   }
 
   .price_1 {
-    left: 430px;
+    left: 460px;
   }
 
   .price_2 {
-    right: 550px;
+    right: 580px;
   }
 
   .price_3 {
@@ -1038,7 +1038,8 @@ main {
   }
 
   .plats:hover .price_1 {
-    left: 350px;
+    left: 370px;
+    padding-top: 1%;
   }
   .plats:hover .price_3 {
     right: 30px;

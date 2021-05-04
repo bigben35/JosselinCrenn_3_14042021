@@ -543,35 +543,31 @@ footer {
     width: 90%;
     transform: 0.5s;
     }
-    &:hover .price {
+    &:hover .price_1 {
         animation-delay: 0.5s;
         transform: translateX(-40px);
     
     }
-    &:hover .check_1 {
+    &:hover .price_2 {
+        animation-delay: 0.5s;
+        transform: translateX(-40px);
+    
+    }
+    &:hover .price_3 {
+        animation-delay: 0.5s;
+        transform: translateX(-40px);
+    
+    }
+    &:hover .check {
         visibility: visible;
         width: 60px;
     }
-    &:hover .check_2 {
-        visibility: visible;
-        width: 60px;
-    }
-    &:hover .check_3 {
-        visibility: visible;
-        width: 60px;
-    }
-    &:hover .check_1 i {
+   
+    &:hover .check i {
         animation: rotate 0.4s ease-in;
         animation-delay: 0.2s;
     }
-    &:hover .check_2 i {
-        animation: rotate 0.4s ease-in;
-        animation-delay: 0.2s;
-    }
-    &:hover .check_3 i {
-        animation: rotate 0.4s ease-in;
-        animation-delay: 0.2s;
-    }
+   
 }
 
 .fade {
@@ -624,7 +620,7 @@ footer {
         opacity: 1;
     }
 }
-.price {
+.price_1, .price_2, .price_3 {
     font-weight: bold;
     font-size: 0.8em;
     position: absolute;
@@ -643,7 +639,7 @@ footer {
     overflow: hidden;
     white-space: nowrap;
 }
-.check_1, .check_2, .check_3 {
+.check {
     /*overflow: hidden;*/
    /* border-radius: 0 10px 10px 0;
     background-color: $colour-tertiary;
@@ -792,11 +788,22 @@ main {
         padding-top: 0.3%;
         left: 3.5%;
     }
-    .price {
+    .price_1, .price_2, .price_3 {
         padding: 2% 0 0;
         right: 60px;
       }
-    .check_1, .check_2, .check_3 {
+    .plats:hover {
+        & .price_1 {
+        right: 30px;
+        }
+        & .price_2 {
+            right: 30px;
+            }
+            & .price_3 {
+                right: 30px;
+                }
+    }
+    .check {
         /*padding: 2.5%;*/
         & i {
             font-size: 1.4em;
@@ -921,11 +928,25 @@ main {
     }
     
 }
-.price {
+.price_1, .price_2, .price_3 {
     right: 160px;
+    padding-top: 1%;
 }
-.plats:hover .price {
-    right: 40px;
+.plats:hover {
+
+    &.price_1 {
+      right: 30px;
+    }
+    &.price_2 {
+        right: 30px;
+      }
+      &.price_3 {
+        right: 30px;
+      }
+
+    &.check {
+     width: 10%;
+}
 }
 }
 
@@ -954,7 +975,14 @@ header {
     margin: auto;
 }
 .menu_title {
-    padding: 4% 31% 4% 33%;
+    padding: 3% 31% 3% 33%;
+
+&.big_title {
+    font-size: 3em;
+}
+&.love {
+    font-size: 1.2em;
+}
 }
 .menu_container {
     display: flex;
@@ -965,8 +993,9 @@ header {
 }
 .lunch {
     width: 31%;
-}.title_menu {
-    padding: 0 0 5% 0;
+}
+.title_menu {
+    padding-bottom: 1%;
 }
 .order {
     margin: 5% auto;
@@ -1018,17 +1047,23 @@ nav {
     padding: 0.5% 1.5%;
     width: 7%;
 }
-.check_1 {
-   right: 67%;
-    padding: 1.32%;
+.price_1 {
+    left: 430px;
 }
-.check_2 {
-    right: 36%;
-    padding: 1.32%;
+.price_2 {
+    right: 550px;
 }
-.check_3 {
-    padding: 1.32%;
-    right: 5.8%;
+.price_3 {
+    right: 110px;
+}
+.plats:hover { 
+    & .price_1 {
+    left: 350px;
+}
+
+& .price_3 {
+    right: 30px;
+}
 }
 .contact {
         padding-bottom: 2%;

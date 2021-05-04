@@ -521,31 +521,23 @@ footer a {
   width: 90%;
   transform: 0.5s;
 }
-.plats:hover .price {
+.plats:hover .price_1 {
   animation-delay: 0.5s;
   transform: translateX(-40px);
 }
-.plats:hover .check_1 {
+.plats:hover .price_2 {
+  animation-delay: 0.5s;
+  transform: translateX(-40px);
+}
+.plats:hover .price_3 {
+  animation-delay: 0.5s;
+  transform: translateX(-40px);
+}
+.plats:hover .check {
   visibility: visible;
   width: 60px;
 }
-.plats:hover .check_2 {
-  visibility: visible;
-  width: 60px;
-}
-.plats:hover .check_3 {
-  visibility: visible;
-  width: 60px;
-}
-.plats:hover .check_1 i {
-  animation: rotate 0.4s ease-in;
-  animation-delay: 0.2s;
-}
-.plats:hover .check_2 i {
-  animation: rotate 0.4s ease-in;
-  animation-delay: 0.2s;
-}
-.plats:hover .check_3 i {
+.plats:hover .check i {
   animation: rotate 0.4s ease-in;
   animation-delay: 0.2s;
 }
@@ -608,7 +600,7 @@ footer a {
     opacity: 1;
   }
 }
-.price {
+.price_1, .price_2, .price_3 {
   font-weight: bold;
   font-size: 0.8em;
   position: absolute;
@@ -629,7 +621,7 @@ footer a {
   white-space: nowrap;
 }
 
-.check_1, .check_2, .check_3 {
+.check {
   /*overflow: hidden;*/
   /* border-radius: 0 10px 10px 0;
    background-color: $colour-tertiary;
@@ -663,13 +655,13 @@ footer a {
   transition: width 1s;
   display: flex;
 }
-.check_1 i, .check_2 i, .check_3 i {
+.check i {
   color: white;
   /*height: 100%;*/
   /* transition: transform 0.5s ease-in-out;
    transform: rotate(360deg);*/
 }
-.check_1:hover, .check_2:hover, .check_3:hover {
+.check:hover {
   /*visibility: visible;*/
 }
 
@@ -766,15 +758,25 @@ main {
     left: 3.5%;
   }
 
-  .price {
+  .price_1, .price_2, .price_3 {
     padding: 2% 0 0;
     right: 60px;
   }
 
-  .check_1, .check_2, .check_3 {
+  .plats:hover .price_1 {
+    right: 30px;
+  }
+  .plats:hover .price_2 {
+    right: 30px;
+  }
+  .plats:hover .price_3 {
+    right: 30px;
+  }
+
+  .check {
     /*padding: 2.5%;*/
   }
-  .check_1 i, .check_2 i, .check_3 i {
+  .check i {
     font-size: 1.4em;
   }
 
@@ -905,12 +907,22 @@ main {
     padding: 3% 0 2%;
   }
 
-  .price {
+  .price_1, .price_2, .price_3 {
     right: 160px;
+    padding-top: 1%;
   }
 
-  .plats:hover .price {
-    right: 40px;
+  .plats:hover.price_1 {
+    right: 30px;
+  }
+  .plats:hover.price_2 {
+    right: 30px;
+  }
+  .plats:hover.price_3 {
+    right: 30px;
+  }
+  .plats:hover.check {
+    width: 10%;
   }
 }
 /*MIN-WIDTH:1440px*/
@@ -936,7 +948,13 @@ main {
   }
 
   .menu_title {
-    padding: 4% 31% 4% 33%;
+    padding: 3% 31% 3% 33%;
+  }
+  .menu_title.big_title {
+    font-size: 3em;
+  }
+  .menu_title.love {
+    font-size: 1.2em;
   }
 
   .menu_container {
@@ -952,7 +970,7 @@ main {
   }
 
   .title_menu {
-    padding: 0 0 5% 0;
+    padding-bottom: 1%;
   }
 
   .order {
@@ -1007,19 +1025,23 @@ main {
     width: 7%;
   }
 
-  .check_1 {
-    right: 67%;
-    padding: 1.32%;
+  .price_1 {
+    left: 430px;
   }
 
-  .check_2 {
-    right: 36%;
-    padding: 1.32%;
+  .price_2 {
+    right: 550px;
   }
 
-  .check_3 {
-    padding: 1.32%;
-    right: 5.8%;
+  .price_3 {
+    right: 110px;
+  }
+
+  .plats:hover .price_1 {
+    left: 350px;
+  }
+  .plats:hover .price_3 {
+    right: 30px;
   }
 
   .contact {

@@ -321,11 +321,6 @@ p {
   margin: 0;
 }
 
-.love .far.fa-heart, .love, .love .fas.fa-heart:hover {
-  /*background-clip: text;*/
-  /*-webkit-text-fill-color: transparent;*/
-}
-
 .menu_title {
   position: relative;
 }
@@ -661,9 +656,6 @@ footer a {
   /* transition: transform 0.5s ease-in-out;
    transform: rotate(360deg);*/
 }
-.check:hover {
-  /*visibility: visible;*/
-}
 
 @keyframes width {
   0% {
@@ -773,9 +765,6 @@ main {
     right: 30px;
   }
 
-  .check {
-    /*padding: 2.5%;*/
-  }
   .check i {
     font-size: 1.4em;
   }

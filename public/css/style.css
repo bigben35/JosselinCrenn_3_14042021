@@ -922,7 +922,7 @@ main {
     right: 30px;
   }
   .plats:hover .check {
-    width: 9%;
+    width: 10%;
   }
 }
 /*MIN-WIDTH:1440px*/
@@ -971,7 +971,6 @@ main {
 
   .title_menu {
     padding-bottom: 1%;
-    font-size: 1.1em;
   }
 
   .order {
@@ -1037,9 +1036,7 @@ main {
   .price_3 {
     right: 110px;
   }
-  .plats:hover .check {
-    width: 15%;
-  }
+
   .plats:hover .price_1 {
     left: 370px;
     padding-top: 1%;

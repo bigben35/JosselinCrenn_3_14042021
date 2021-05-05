@@ -531,13 +531,6 @@ footer {
         filter: brightness(1.02);
     }
     
-    &:hover .title_plat p {
-        text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 90%;
-    transform: 0.5s;
-    }
     &:hover .price_1 {
         animation-delay: 0.5s;
         transform: translateX(-40px);
@@ -747,6 +740,15 @@ main {
     .letter {
         font-size: 50px;
     }
+    .plats {
+        &:hover .title_plat p {
+            text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 90%;
+        transform: 0.5s;
+        }
+    }
 }
 
 
@@ -796,6 +798,7 @@ main {
                 right: 30px;
                 }
     }
+    
     .check {
         
         & i {
@@ -938,7 +941,7 @@ main {
       }
 
     & .check {
-     width: 10%;
+     width: 8%;
 }
 }
 }
@@ -981,7 +984,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    column-gap: 3%;
+    column-gap: 3.5%;
     margin: 0 5%;
 }
 .lunch {
@@ -1041,22 +1044,28 @@ nav {
     width: 7%;
 }
 .price_1 {
-    left: 460px;
+    left: 430px;
 }
 .price_2 {
-    right: 580px;
+    right: 540px;
 }
 .price_3 {
-    right: 110px;
+    right: 100px;
 }
 .plats:hover { 
     & .price_1 {
-    left: 370px;
+    left: 350px;
     padding-top: 1%;
 }
+/*& .price_2 {
+    left: 500px;
+}*/
 
 & .price_3 {
     right: 30px;
+}
+& .check {
+    width: 15%;
 }
 }
 .contact {
@@ -1065,6 +1074,9 @@ nav {
     img {
         width: 20%;
         padding: 2% 0 1%;
+    }
+    & a:hover {
+        transform: translateX(5px) scale(1.1);
     }
 }
 }

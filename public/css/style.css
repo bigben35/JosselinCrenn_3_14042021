@@ -509,13 +509,6 @@ footer a {
   box-shadow: 0 5px 15px 0 #96999b;
   filter: brightness(1.02);
 }
-.plats:hover .title_plat p {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 90%;
-  transform: 0.5s;
-}
 .plats:hover .price_1 {
   animation-delay: 0.5s;
   transform: translateX(-40px);
@@ -719,6 +712,14 @@ main {
   .letter {
     font-size: 50px;
   }
+
+  .plats:hover .title_plat p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 90%;
+    transform: 0.5s;
+  }
 }
 /*min-width:768px*/
 @media screen and (min-width: 768px) {
@@ -911,7 +912,7 @@ main {
     right: 30px;
   }
   .plats:hover .check {
-    width: 10%;
+    width: 8%;
   }
 }
 /*MIN-WIDTH:1440px*/
@@ -950,7 +951,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    column-gap: 3%;
+    column-gap: 3.5%;
     margin: 0 5%;
   }
 
@@ -1015,23 +1016,31 @@ main {
   }
 
   .price_1 {
-    left: 460px;
+    left: 430px;
   }
 
   .price_2 {
-    right: 580px;
+    right: 540px;
   }
 
   .price_3 {
-    right: 110px;
+    right: 100px;
   }
 
+  .plats:hover {
+    /*& .price_2 {
+        left: 500px;
+    }*/
+  }
   .plats:hover .price_1 {
-    left: 370px;
+    left: 350px;
     padding-top: 1%;
   }
   .plats:hover .price_3 {
     right: 30px;
+  }
+  .plats:hover .check {
+    width: 15%;
   }
 
   .contact {
@@ -1040,6 +1049,9 @@ main {
   .contact img {
     width: 20%;
     padding: 2% 0 1%;
+  }
+  .contact a:hover {
+    transform: translateX(5px) scale(1.1);
   }
 }
 

@@ -553,7 +553,7 @@ footer {
    
     &:hover .check i {
         animation: rotate 0.4s ease-in;
-        animation-delay: 0.2s;
+        animation-delay: 0.1s;
     }
    
 }
@@ -820,6 +820,11 @@ main {
         i {
             padding-right: 1%;
         }
+        & a:hover {
+            transform: translateX(1.5%) scale(1.02);
+            width: 95%;
+            
+        }
     }
     .subtitle {
         margin-top: 1%;
@@ -943,6 +948,12 @@ main {
     & .check {
      width: 8%;
 }
+}
+.contact i {
+    font-size: 0.9em;
+}
+.fa-hands-helping::before {
+    font-size: 1em;
 }
 }
 
@@ -1075,8 +1086,6 @@ nav {
         width: 20%;
         padding: 2% 0 1%;
     }
-    & a:hover {
-        transform: translateX(5px) scale(1.1);
-    }
+    
 }
 }

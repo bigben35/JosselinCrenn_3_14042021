@@ -102,20 +102,20 @@ body {
 @keyframes flash {
     0% {
         color: $colour-secondary;
-        background: linear-gradient(to bottom right, $colour-secondary 0%, $colour-primary 100%);
+        -webkit-text-shadow: linear-gradient(to bottom right, $colour-secondary 0%, $colour-primary 100%);
 
     }
     50% {
         color: $colour-primary;
-        background: linear-gradient(to bottom right, $colour-secondary 0%,$colour-primary 100%);
+        -webkit-text-shadow: linear-gradient(to bottom right, $colour-secondary 0%,$colour-primary 100%);
     }
     80% {
         color:$colour-secondary;
-        background: none;
+        text-shadow: none;
     }
     100% {
         color: $colour-primary;
-        background:  linear-gradient(to bottom right, $colour-secondary 0%,$colour-primary 100%);
+        -webkit-text-shadow:  linear-gradient(to bottom right, $colour-secondary 0%,$colour-primary 100%);
     }
 }
 .letter:nth-child(1) {

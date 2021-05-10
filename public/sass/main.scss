@@ -102,20 +102,20 @@ body {
 @keyframes flash {
     0% {
         color: $colour-secondary;
-        text-shadow: 0 0 7px linear-gradient(to bottom right,$colour-secondary,$colour-primary);
+        background: linear-gradient(to bottom right, $colour-secondary 0%, $colour-primary 100%);
 
     }
     50% {
         color: $colour-primary;
-        text-shadow: 0 0 7px linear-gradient(to bottom right,$colour-secondary,$colour-primary);
+        background: linear-gradient(to bottom right, $colour-secondary 0%,$colour-primary 100%);
     }
     80% {
         color:$colour-secondary;
-        text-shadow: none;
+        background: none;
     }
     100% {
         color: $colour-primary;
-        text-shadow: 0 0 7px linear-gradient(to bottom right,$colour-secondary,$colour-primary);
+        background:  linear-gradient(to bottom right, $colour-secondary 0%,$colour-primary 100%);
     }
 }
 .letter:nth-child(1) {
@@ -578,6 +578,9 @@ footer {
 .fade_3 {
     animation: fadeIn 1.2s;
 }
+.fade_10 {
+    animation: fadeIn 1.4s;
+}
 .fade_4 {
     animation: fadeIn 1.6s;
 }
@@ -604,7 +607,7 @@ footer {
         opacity: 0;
     }
     100% {
-        transform: translateY(1.0);
+        transform: translateY(100%);
         opacity: 1;
     }
 }
@@ -746,7 +749,7 @@ main {
         overflow: hidden;
         white-space: nowrap;
         width: 90%;
-        transform: 0.5s;
+        /*transform: 0.5s;*/
         }
     }
 }

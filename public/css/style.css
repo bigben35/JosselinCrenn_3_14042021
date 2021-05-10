@@ -96,19 +96,19 @@ body {
 @keyframes flash {
   0% {
     color: #FF79DA;
-    text-shadow: 0 0 7px linear-gradient(to bottom right, #FF79DA, #9356dc);
+    background: linear-gradient(to bottom right, #FF79DA 0%, #9356dc 100%);
   }
   50% {
     color: #9356dc;
-    text-shadow: 0 0 7px linear-gradient(to bottom right, #FF79DA, #9356dc);
+    background: linear-gradient(to bottom right, #FF79DA 0%, #9356dc 100%);
   }
   80% {
     color: #FF79DA;
-    text-shadow: none;
+    background: none;
   }
   100% {
     color: #9356dc;
-    text-shadow: 0 0 7px linear-gradient(to bottom right, #FF79DA, #9356dc);
+    background: linear-gradient(to bottom right, #FF79DA 0%, #9356dc 100%);
   }
 }
 .letter:nth-child(1) {
@@ -554,6 +554,10 @@ footer a {
   animation: fadeIn 1.2s;
 }
 
+.fade_10 {
+  animation: fadeIn 1.4s;
+}
+
 .fade_4 {
   animation: fadeIn 1.6s;
 }
@@ -584,7 +588,7 @@ footer a {
     opacity: 0;
   }
   100% {
-    transform: translateY(1);
+    transform: translateY(100%);
     opacity: 1;
   }
 }
@@ -718,7 +722,7 @@ main {
     overflow: hidden;
     white-space: nowrap;
     width: 90%;
-    transform: 0.5s;
+    /*transform: 0.5s;*/
   }
 }
 /*min-width:768px*/

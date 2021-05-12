@@ -478,9 +478,7 @@ footer {
   align-items: center;
   padding: 10% 10% 2% 5%;
 }
-.title_menu_1,
-.title_menu_2,
-.title_menu_3 {
+.title_menu {
   margin-left: 2%;
   text-transform: uppercase;
   font-weight: 100;
@@ -550,7 +548,7 @@ footer {
 
   &:hover .check {
     visibility: visible;
-    width: 60px;
+    width: 50px;
   }
 
   &:hover .check i {
@@ -558,27 +556,7 @@ footer {
     animation-delay: 0.1s;
   }
 }
-/*.title_menu_2,
-.title_menu_3 {
-  animation: appear 0.2s;
-}
-.title_menu_2 {
-  animation: appear;
-  animation-delay: 1.4s;
-}
-.title_menu_3 {
-  animation: appear;
-  animation-delay: 2.8s;
-}
-@keyframes appear {
-  from {
-    transform: scale(0.2);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-*/
+
 .fade {
   animation: fadeIn 4s forwards;
 }
@@ -636,7 +614,7 @@ footer {
   font-weight: bold;
   font-size: 0.8em;
   position: absolute;
-  right: 30px;
+  right: 5%;
   transition: width 1s;
   transition: transform 0.5s ease-in-out;
   padding-top: 5%;
@@ -650,6 +628,9 @@ footer {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  &:hover {
+    width: 75%;
+  }
   /*transition: transform 1s ease-in-out;*/
 }
 .check {
@@ -698,7 +679,7 @@ footer {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50px);
+    transform: translateX(-40px);
   }
 }
 @keyframes price {
@@ -709,14 +690,7 @@ footer {
     transform: translateX(-50px);
   }
 }
-/*@keyframes title_plat {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-10px);
-  }
-}*/
+
 @keyframes rotate {
   0% {
     transform: rotate(-360deg) scale(1);
@@ -803,9 +777,7 @@ main {
       font-size: 1.7em;
     }
   }
-  .title_menu_1,
-  .title_menu_2,
-  .title_menu_3 {
+  .title_menu {
     padding: 5% 0 1%;
   }
 
@@ -817,15 +789,12 @@ main {
     padding: 2% 0 0;
     right: 5%;
   }
-  /*.plats:hover {
-    & .price {
-      right: 5%;
-    }
-  }*/
-
-  .check {
-    & i {
-      font-size: 1.4em;
+  .plats:hover {
+    .check {
+      width: 60px;
+      & i {
+        font-size: 1.4em;
+      }
     }
   }
   .order {

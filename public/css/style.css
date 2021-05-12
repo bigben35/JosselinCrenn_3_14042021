@@ -17,7 +17,9 @@ body {
   font-family: "Roboto", "sans-serif";
 }
 
-.logo, .small_logo, .big_title {
+.logo,
+.small_logo,
+.big_title {
   font-family: "Shrikhand", "sans-serif";
 }
 
@@ -95,20 +97,20 @@ body {
 }
 @keyframes flash {
   0% {
-    color: #FF79DA;
-    -webkit-text-shadow: linear-gradient(to bottom right, #FF79DA 0%, #9356dc 100%);
+    color: #ff79da;
+    -webkit-text-shadow: linear-gradient(to bottom right, #ff79da 0%, #9356dc 100%);
   }
   50% {
     color: #9356dc;
-    -webkit-text-shadow: linear-gradient(to bottom right, #FF79DA 0%, #9356dc 100%);
+    -webkit-text-shadow: linear-gradient(to bottom right, #ff79da 0%, #9356dc 100%);
   }
   80% {
-    color: #FF79DA;
+    color: #ff79da;
     text-shadow: none;
   }
   100% {
     color: #9356dc;
-    -webkit-text-shadow: linear-gradient(to bottom right, #FF79DA 0%, #9356dc 100%);
+    -webkit-text-shadow: linear-gradient(to bottom right, #ff79da 0%, #9356dc 100%);
   }
 }
 .letter:nth-child(1) {
@@ -207,7 +209,7 @@ aside {
 }
 
 .button {
-  background: linear-gradient(to bottom right, #FF79DA, #9356dc);
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: white;
   border-radius: 15px;
   padding: 2%;
@@ -233,9 +235,9 @@ nav {
   padding: 5% 0;
   margin-bottom: 4%;
   /*&:hover {
-      box-shadow: 0 5px 15px 0 #bcc2c6;
-      filter: brightness(1.05);
-  }*/
+        box-shadow: 0 5px 15px 0 #bcc2c6;
+        filter: brightness(1.05);
+    }*/
 }
 .function i, .function_2 i {
   padding: 0 10%;
@@ -298,7 +300,8 @@ nav li :hover i {
   border-radius: 10px 10px 0 0;
 }
 
-.new_1, .new_2 {
+.new_1,
+.new_2 {
   position: absolute;
   right: 8%;
   background-color: #99e2d0;
@@ -340,14 +343,14 @@ p {
 
 .vide {
   /*&::after{
-      content: '';
-      display: flex;
-      position: absolute;
-      top: 0;
-      // background-color: blue;
-      width: 100%;
-      height: 100%;
-  }*/
+        content: '';
+        display: flex;
+        position: absolute;
+        top: 0;
+        // background-color: blue;
+        width: 100%;
+        height: 100%;
+    }*/
   opacity: 1;
   /*position: absolute;*/
 }
@@ -367,14 +370,14 @@ p {
   cursor: pointer;
   position: relative;
   /*&.far.fa-heart:hover {
-      opacity: 0;
-  }
-  &.fas.fa.heart:hover {
-      opacity: 1;
-      background-clip: text;
-      display: block;
-      -webkit-text-fill-color: transparent;
-  }*/
+        opacity: 0;
+    }
+    &.fas.fa.heart:hover {
+        opacity: 1;
+        background-clip: text;
+        display: block;
+        -webkit-text-fill-color: transparent;
+    }*/
 }
 
 .fa-heart:before {
@@ -493,6 +496,7 @@ footer a {
 }*/
 .plats {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   border-radius: 15px;
@@ -509,15 +513,7 @@ footer a {
   box-shadow: 0 5px 15px 0 #96999b;
   filter: brightness(1.02);
 }
-.plats:hover .price_1 {
-  animation-delay: 0.5s;
-  transform: translateX(-40px);
-}
-.plats:hover .price_2 {
-  animation-delay: 0.5s;
-  transform: translateX(-40px);
-}
-.plats:hover .price_3 {
+.plats:hover .price {
   animation-delay: 0.5s;
   transform: translateX(-40px);
 }
@@ -592,7 +588,7 @@ footer a {
     opacity: 1;
   }
 }
-.price_1, .price_2, .price_3 {
+.price {
   font-weight: bold;
   font-size: 0.8em;
   position: absolute;
@@ -616,17 +612,17 @@ footer a {
 .check {
   /*overflow: hidden;*/
   /* border-radius: 0 10px 10px 0;
-   background-color: $colour-tertiary;
-   /*height: 100%;*/
+    background-color: $colour-tertiary;
+    /*height: 100%;*/
   /*padding: 8% 7%;*/
   /*padding: 7%;
-  right: 0;
-  visibility: hidden;
-  /*position: absolute;*/
+    right: 0;
+    visibility: hidden;
+    /*position: absolute;*/
   /*display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.5s ease-in-out;*/
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;*/
   border-radius: 0 10px 10px 0;
   background-color: #99e2d0;
   /* height: 100%; */
@@ -651,7 +647,7 @@ footer a {
   color: white;
   /*height: 100%;*/
   /* transition: transform 0.5s ease-in-out;
-   transform: rotate(360deg);*/
+  transform: rotate(360deg);*/
 }
 
 @keyframes width {
@@ -697,7 +693,7 @@ footer a {
   border-radius: 20px;
   margin-top: 10%;
   cursor: pointer;
-  background: linear-gradient(to bottom right, #FF79DA, #9356dc);
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: white;
   margin-bottom: 18%;
 }
@@ -755,21 +751,16 @@ main {
     left: 3.5%;
   }
 
-  .price_1, .price_2, .price_3 {
+  .price {
     padding: 2% 0 0;
-    right: 60px;
+    right: 5%;
   }
 
-  .plats:hover .price_1 {
-    right: 30px;
-  }
-  .plats:hover .price_2 {
-    right: 30px;
-  }
-  .plats:hover .price_3 {
-    right: 30px;
-  }
-
+  /*.plats:hover {
+    & .price {
+      right: 5%;
+    }
+  }*/
   .check i {
     font-size: 1.4em;
   }
@@ -856,15 +847,18 @@ main {
     width: 30%;
   }
 
-  .function, .function_2 {
+  .function,
+.function_2 {
     margin-bottom: 0;
   }
-  .function .circle, .function_2 .circle {
+  .function .circle,
+.function_2 .circle {
     position: relative;
     left: -4%;
     padding-top: 1%;
   }
-  .function i, .function_2 i {
+  .function i,
+.function_2 i {
     padding: 0 7%;
   }
 
@@ -905,19 +899,15 @@ main {
     padding: 3% 0 2%;
   }
 
-  .price_1, .price_2, .price_3 {
-    right: 160px;
+  .price {
+    right: 5%;
     padding-top: 1%;
   }
 
-  .plats:hover .price_1 {
-    right: 30px;
-  }
-  .plats:hover .price_2 {
-    right: 30px;
-  }
-  .plats:hover .price_3 {
-    right: 30px;
+  .plats:hover {
+    /*& .price {
+      //   right: 30px;
+    }*/
   }
   .plats:hover .check {
     width: 8%;
@@ -999,10 +989,12 @@ main {
     padding: 3% 0;
   }
 
-  .function, .function_2 {
+  .function,
+.function_2 {
     padding: 5% 10%;
   }
-  .function .circle, .function_2 .circle {
+  .function .circle,
+.function_2 .circle {
     left: -15%;
   }
 
@@ -1031,29 +1023,17 @@ main {
     width: 7%;
   }
 
-  .price_1 {
-    left: 430px;
-  }
-
-  .price_2 {
-    right: 540px;
-  }
-
-  .price_3 {
-    right: 100px;
+  .price {
+    right: 7%;
   }
 
   .plats:hover {
-    /*& .price_2 {
+    /*& .price {
         left: 500px;
     }*/
   }
-  .plats:hover .price_1 {
-    left: 350px;
+  .plats:hover .price {
     padding-top: 1%;
-  }
-  .plats:hover .price_3 {
-    right: 30px;
   }
   .plats:hover .check {
     width: 15%;

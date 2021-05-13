@@ -20,6 +20,22 @@ header img {
   filter: brightness(1.1);
 }
 
+.order {
+  display: block;
+  margin: auto;
+  padding: 3% 12%;
+  border-radius: 20px;
+  margin-top: 10%;
+  cursor: pointer;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  color: white;
+  margin-bottom: 18%;
+}
+.order:hover {
+  box-shadow: 0 5px 15px 0 #9356dc;
+  filter: brightness(1.1);
+}
+
 footer {
   background-color: black;
 }
@@ -51,29 +67,7 @@ footer a {
   font-size: 0.7em;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  overflow-y: scroll;
-}
-
-body {
-  width: 100%;
-  height: 100%;
-  margin-top: 5%;
-  font-family: "Roboto", "sans-serif";
-}
-
-.logo,
-.small_logo,
-.big_title {
-  font-family: "Shrikhand", "sans-serif";
-}
-
+/*ANIMATIONS LOADER*/
 .loader {
   position: fixed;
   top: 0;
@@ -86,14 +80,6 @@ body {
   display: flex;
 }
 
-@keyframes loader {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-  }
-}
 .loading-spinner {
   position: absolute;
   width: 100%;
@@ -118,24 +104,6 @@ body {
   -webkit-animation: flash 1.5s linear infinite;
 }
 
-@keyframes flash {
-  0% {
-    color: #ff79da;
-    -webkit-text-shadow: linear-gradient(to bottom right, #ff79da 0%, #9356dc 100%);
-  }
-  50% {
-    color: #9356dc;
-    -webkit-text-shadow: linear-gradient(to bottom right, #ff79da 0%, #9356dc 100%);
-  }
-  80% {
-    color: #ff79da;
-    text-shadow: none;
-  }
-  100% {
-    color: #9356dc;
-    -webkit-text-shadow: linear-gradient(to bottom right, #ff79da 0%, #9356dc 100%);
-  }
-}
 .letter:nth-child(1) {
   animation-delay: 100ms;
 }
@@ -174,6 +142,161 @@ body {
 
 .letter:nth-child(10) {
   animation-delay: 1000ms;
+}
+
+/*ANIMATIONS PLATS*/
+.fade {
+  animation: fadeIn 4s forwards;
+}
+
+.fade_1 {
+  animation: fadeIn 0.4s;
+}
+
+.fade_2 {
+  animation: fadeIn 0.8s;
+}
+
+.fade_3 {
+  animation: fadeIn 1.2s;
+}
+
+.fade_10 {
+  animation: fadeIn 1.4s;
+}
+
+.fade_4 {
+  animation: fadeIn 1.6s;
+}
+
+.fade_5 {
+  animation: fadeIn 2s;
+}
+
+.fade_6 {
+  animation: fadeIn 2.4s;
+}
+
+.fade_7 {
+  animation: fadeIn 2.8s;
+}
+
+.fade_8 {
+  animation: fadeIn 3.2s;
+}
+
+.fade_9 {
+  animation: fadeIn 3.6s;
+}
+
+/* ANIMATION TEMPS DU LOADER PAGE D ACCUEIL*/
+@keyframes loader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+/*ANIMATIONS COULEUR DES LETTRES DU LOADER*/
+@keyframes flash {
+  0% {
+    color: #ff79da;
+    -webkit-text-shadow: linear-gradient(to bottom right, #ff79da 0%, #9356dc 100%);
+  }
+  50% {
+    color: #9356dc;
+    -webkit-text-shadow: linear-gradient(to bottom right, #ff79da 0%, #9356dc 100%);
+  }
+  80% {
+    color: #ff79da;
+    text-shadow: none;
+  }
+  100% {
+    color: #9356dc;
+    -webkit-text-shadow: linear-gradient(to bottom right, #ff79da 0%, #9356dc 100%);
+  }
+}
+/*ANIMATION APPARITION DES PLATS*/
+@keyframes fadeIn {
+  from {
+    transform: scale(0.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/*ANIMATION APPARITION DU MENU*/
+@keyframes menu {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+}
+/*LARGEUR DU CHECK*/
+@keyframes width {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-40px);
+  }
+}
+/*PRIX ALLANT SUR LA GAUCHE*/
+@keyframes price {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50px);
+  }
+}
+/*ROTATION DU CHECK*/
+@keyframes rotate {
+  0% {
+    transform: rotate(-360deg) scale(1);
+  }
+  20% {
+    transform: rotate(-180deg) scale(1.1);
+  }
+  40% {
+    transform: rotate(-120deg) scale(1.2);
+  }
+  60% {
+    transform: rotate(-80deg) scale(1.1);
+  }
+  80% {
+    transform: rotate(-40deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+  font-family: "Roboto", "sans-serif";
+}
+
+.logo,
+.small_logo,
+.big_title {
+  font-family: "Shrikhand", "sans-serif";
 }
 
 h2 {
@@ -456,68 +579,6 @@ p {
   animation-delay: 0.1s;
 }
 
-.fade {
-  animation: fadeIn 4s forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    transform: scale(0.2);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-.fade_1 {
-  animation: fadeIn 0.4s;
-}
-
-.fade_2 {
-  animation: fadeIn 0.8s;
-}
-
-.fade_3 {
-  animation: fadeIn 1.2s;
-}
-
-.fade_10 {
-  animation: fadeIn 1.4s;
-}
-
-.fade_4 {
-  animation: fadeIn 1.6s;
-}
-
-.fade_5 {
-  animation: fadeIn 2s;
-}
-
-.fade_6 {
-  animation: fadeIn 2.4s;
-}
-
-.fade_7 {
-  animation: fadeIn 2.8s;
-}
-
-.fade_8 {
-  animation: fadeIn 3.2s;
-}
-
-.fade_9 {
-  animation: fadeIn 3.6s;
-}
-
-@keyframes menu {
-  0% {
-    transform: translateY(0);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(100%);
-    opacity: 1;
-  }
-}
 .price {
   font-weight: bold;
   font-size: 0.8em;
@@ -556,58 +617,6 @@ p {
 }
 .check i {
   color: white;
-}
-
-@keyframes width {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-40px);
-  }
-}
-@keyframes price {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50px);
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(-360deg) scale(1);
-  }
-  20% {
-    transform: rotate(-180deg) scale(1.1);
-  }
-  40% {
-    transform: rotate(-120deg) scale(1.2);
-  }
-  60% {
-    transform: rotate(-80deg) scale(1.1);
-  }
-  80% {
-    transform: rotate(-40deg) scale(1.05);
-  }
-  100% {
-    transform: rotate(0deg) scale(1);
-  }
-}
-.order {
-  display: block;
-  margin: auto;
-  padding: 3% 12%;
-  border-radius: 20px;
-  margin-top: 10%;
-  cursor: pointer;
-  background: linear-gradient(to bottom right, #ff79da, #9356dc);
-  color: white;
-  margin-bottom: 18%;
-}
-.order:hover {
-  box-shadow: 0 5px 15px 0 #9356dc;
-  filter: brightness(1.1);
 }
 
 main {

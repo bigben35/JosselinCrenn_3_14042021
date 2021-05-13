@@ -2,6 +2,8 @@
 @import "./Layout/_header";
 @import "./Composants/button";
 @import "./Layout/footer";
+@import "./Utils/animations";
+@import "./Utils/keyframes";
 
 * {
   box-sizing: border-box;
@@ -23,110 +25,6 @@ body {
   font-family: "Shrikhand", "sans-serif";
 }
 
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  z-index: 10;
-  animation: loader 3s forwards;
-  display: flex;
-}
-@keyframes loader {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-  }
-}
-
-.loading-spinner {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: flash 1s forwards;
-  -webkit-animation: flash 1s forwards;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
-.letter {
-  color: #fff;
-  font-size: 100px;
-  letter-spacing: 2px;
-  font-family: "Shrikhand";
-  animation: flash 1.5s linear infinite;
-  -webkit-animation: flash 1.5s linear infinite;
-}
-
-@keyframes flash {
-  0% {
-    color: $colour-secondary;
-    -webkit-text-shadow: linear-gradient(
-      to bottom right,
-      $colour-secondary 0%,
-      $colour-primary 100%
-    );
-  }
-  50% {
-    color: $colour-primary;
-    -webkit-text-shadow: linear-gradient(
-      to bottom right,
-      $colour-secondary 0%,
-      $colour-primary 100%
-    );
-  }
-  80% {
-    color: $colour-secondary;
-    text-shadow: none;
-  }
-  100% {
-    color: $colour-primary;
-    -webkit-text-shadow: linear-gradient(
-      to bottom right,
-      $colour-secondary 0%,
-      $colour-primary 100%
-    );
-  }
-}
-.letter:nth-child(1) {
-  animation-delay: 100ms;
-}
-.letter:nth-child(2) {
-  animation-delay: 200ms;
-}
-.letter:nth-child(3) {
-  animation-delay: 300ms;
-}
-.letter:nth-child(4) {
-  animation-delay: 400ms;
-}
-.letter:nth-child(5) {
-  animation-delay: 500ms;
-}
-.letter:nth-child(6) {
-  animation-delay: 600ms;
-}
-.letter:nth-child(7) {
-  animation-delay: 700ms;
-}
-.letter:nth-child(8) {
-  animation-delay: 800ms;
-}
-.letter:nth-child(9) {
-  animation-delay: 900ms;
-}
-.letter:nth-child(10) {
-  animation-delay: 1000ms;
-}
 h2 {
   padding: 10% 0 5% 0%;
   font-size: 1.3em;
@@ -398,59 +296,6 @@ p {
   }
 }
 
-.fade {
-  animation: fadeIn 4s forwards;
-}
-@keyframes fadeIn {
-  from {
-    transform: scale(0.2);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-.fade_1 {
-  animation: fadeIn 0.4s;
-}
-.fade_2 {
-  animation: fadeIn 0.8s;
-}
-.fade_3 {
-  animation: fadeIn 1.2s;
-}
-.fade_10 {
-  animation: fadeIn 1.4s;
-}
-.fade_4 {
-  animation: fadeIn 1.6s;
-}
-.fade_5 {
-  animation: fadeIn 2s;
-}
-.fade_6 {
-  animation: fadeIn 2.4s;
-}
-.fade_7 {
-  animation: fadeIn 2.8s;
-}
-.fade_8 {
-  animation: fadeIn 3.2s;
-}
-.fade_9 {
-  animation: fadeIn 3.6s;
-}
-
-@keyframes menu {
-  0% {
-    transform: translateY(0);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(100%);
-    opacity: 1;
-  }
-}
 .price {
   font-weight: bold;
   font-size: 0.8em;
@@ -488,63 +333,6 @@ p {
   display: flex;
   & i {
     color: white;
-  }
-}
-@keyframes width {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-40px);
-  }
-}
-@keyframes price {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50px);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(-360deg) scale(1);
-  }
-  20% {
-    transform: rotate(-180deg) scale(1.1);
-  }
-  40% {
-    transform: rotate(-120deg) scale(1.2);
-  }
-  60% {
-    transform: rotate(-80deg) scale(1.1);
-  }
-  80% {
-    transform: rotate(-40deg) scale(1.05);
-  }
-  100% {
-    transform: rotate(0deg) scale(1);
-  }
-}
-
-.order {
-  display: block;
-  margin: auto;
-  padding: 3% 12%;
-  border-radius: 20px;
-  margin-top: 10%;
-  cursor: pointer;
-  background: linear-gradient(
-    to bottom right,
-    $colour-secondary,
-    $colour-primary
-  );
-  color: white;
-  margin-bottom: 18%;
-  &:hover {
-    box-shadow: 0 5px 15px 0 $colour-primary;
-    filter: brightness(1.1);
   }
 }
 

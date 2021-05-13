@@ -1,0 +1,106 @@
+/* ANIMATION TEMPS DU LOADER PAGE D ACCUEIL*/
+@keyframes loader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+/*ANIMATIONS COULEUR DES LETTRES DU LOADER*/
+
+@keyframes flash {
+  0% {
+    color: $colour-secondary;
+    -webkit-text-shadow: linear-gradient(
+      to bottom right,
+      $colour-secondary 0%,
+      $colour-primary 100%
+    );
+  }
+  50% {
+    color: $colour-primary;
+    -webkit-text-shadow: linear-gradient(
+      to bottom right,
+      $colour-secondary 0%,
+      $colour-primary 100%
+    );
+  }
+  80% {
+    color: $colour-secondary;
+    text-shadow: none;
+  }
+  100% {
+    color: $colour-primary;
+    -webkit-text-shadow: linear-gradient(
+      to bottom right,
+      $colour-secondary 0%,
+      $colour-primary 100%
+    );
+  }
+}
+
+/*ANIMATION APPARITION DES PLATS*/
+@keyframes fadeIn {
+  from {
+    transform: scale(0.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/*ANIMATION APPARITION DU MENU*/
+@keyframes menu {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+}
+
+/*LARGEUR DU CHECK*/
+@keyframes width {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-40px);
+  }
+}
+
+/*PRIX ALLANT SUR LA GAUCHE*/
+@keyframes price {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50px);
+  }
+}
+
+/*ROTATION DU CHECK*/
+@keyframes rotate {
+  0% {
+    transform: rotate(-360deg) scale(1);
+  }
+  20% {
+    transform: rotate(-180deg) scale(1.1);
+  }
+  40% {
+    transform: rotate(-120deg) scale(1.2);
+  }
+  60% {
+    transform: rotate(-80deg) scale(1.1);
+  }
+  80% {
+    transform: rotate(-40deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}

@@ -1,4 +1,56 @@
-/*@import "./Layout/_header.scss";*/
+header {
+  margin-bottom: 3%;
+}
+header img {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+.button {
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  color: white;
+  border-radius: 15px;
+  padding: 2%;
+  margin: 5% 0 13%;
+  cursor: pointer;
+}
+.button:hover {
+  box-shadow: 0 5px 15px 0 #9356dc;
+  filter: brightness(1.1);
+}
+
+footer {
+  background-color: black;
+}
+footer img {
+  width: 35%;
+  -webkit-filter: invert(1);
+  padding: 6% 0;
+}
+footer i {
+  font-size: 0.8em;
+  padding-right: 3%;
+  margin: 0;
+}
+footer a {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+}
+
+.contact {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.fa-hands-helping:before {
+  font-size: 0.7em;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,7 +62,6 @@ html {
 }
 
 body {
-  /*background-color: $colour-primary;*/
   width: 100%;
   height: 100%;
   margin-top: 5%;
@@ -43,29 +94,6 @@ body {
     visibility: hidden;
   }
 }
-/*.spin {
-        border-radius: 50px;
-        border: 6px solid rgba(26, 20, 20, 0.4);
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        animation: spin 1.5s linear infinite;
-        -webkit-animation: spin 1.5s linear infinite;
-        margin: auto;
-        top: -150px;
-        bottom: 0;
-        right: 0;
-        left: 0;
-
-    }
-    @keyframes spin {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-    }*/
 .loading-spinner {
   position: absolute;
   width: 100%;
@@ -90,11 +118,6 @@ body {
   -webkit-animation: flash 1.5s linear infinite;
 }
 
-@media screen and (max-width: 576px) {
-  .letter {
-    font-size: 50px;
-  }
-}
 @keyframes flash {
   0% {
     color: #ff79da;
@@ -168,15 +191,6 @@ a {
   color: black;
 }
 
-header {
-  margin-bottom: 3%;
-}
-header img {
-  width: 50%;
-  display: block;
-  margin: auto;
-}
-
 aside {
   background-color: #e9e9e9;
   text-align: center;
@@ -208,19 +222,6 @@ aside {
   font-size: 1em;
 }
 
-.button {
-  background: linear-gradient(to bottom right, #ff79da, #9356dc);
-  color: white;
-  border-radius: 15px;
-  padding: 2%;
-  margin: 5% 0 13%;
-  cursor: pointer;
-}
-.button:hover {
-  box-shadow: 0 5px 15px 0 #9356dc;
-  filter: brightness(1.1);
-}
-
 nav {
   margin: 0 5%;
 }
@@ -234,10 +235,6 @@ nav {
   font-size: 0.9em;
   padding: 5% 0;
   margin-bottom: 4%;
-  /*&:hover {
-        box-shadow: 0 5px 15px 0 #bcc2c6;
-        filter: brightness(1.05);
-    }*/
 }
 .function i, .function_2 i {
   padding: 0 10%;
@@ -345,19 +342,6 @@ p {
   opacity: 1;
 }
 
-.vide {
-  /*&::after{
-        content: '';
-        display: flex;
-        position: absolute;
-        top: 0;
-        // background-color: blue;
-        width: 100%;
-        height: 100%;
-    }*/
-  opacity: 1;
-  /*position: absolute;*/
-}
 .vide:hover {
   transition: all 2s;
   opacity: 0;
@@ -370,53 +354,12 @@ p {
 }
 
 .love {
-  /*padding-right: 6%;*/
   cursor: pointer;
   position: relative;
-  /*&.far.fa-heart:hover {
-        opacity: 0;
-    }
-    &.fas.fa.heart:hover {
-        opacity: 1;
-        background-clip: text;
-        display: block;
-        -webkit-text-fill-color: transparent;
-    }*/
 }
 
 .fa-heart:before {
   font-size: 1.2em;
-}
-
-footer {
-  background-color: black;
-}
-footer img {
-  width: 35%;
-  -webkit-filter: invert(1);
-  padding: 6% 0;
-}
-footer i {
-  font-size: 0.8em;
-  padding-right: 3%;
-  margin: 0;
-}
-footer a {
-  color: white;
-  list-style-type: none;
-  text-decoration: none;
-  margin: 0;
-}
-
-.contact {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  padding: 5%;
-}
-
-.fa-hands-helping:before {
-  font-size: 0.7em;
 }
 
 /*ajout css pages menu*/
@@ -481,28 +424,6 @@ footer a {
   row-gap: 15px;
 }
 
-/*animation: meal 2s forwards;
-
-}
-@keyframes meal {
-    0% {
-        transform: translateY(-1);
-        opacity: 0;
-    }
-    100% {
-       transform: translateY(0);
-        opacity: 1;
-    }
-}
-.lunch:nth-child(1) {
-    animation-delay: 0.5s;
-}
-.lunch:nth-child(2) {
-    animation-delay: 1.5s;
-}
-.lunch:nth-child(3) {
-    animation-delay: 2.5s;
-}*/
 .plats {
   display: flex;
   position: relative;
@@ -605,7 +526,6 @@ footer a {
   transition: width 1s;
   transition: transform 0.5s ease-in-out;
   padding-top: 5%;
-  /*padding: 5% 6% 0 3%;*/
 }
 
 .meal {
@@ -617,51 +537,25 @@ footer a {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
-  /*transition: transform 1s ease-in-out;*/
 }
 .title_plat:hover {
   width: 75%;
 }
 
 .check {
-  /*overflow: hidden;*/
-  /* border-radius: 0 10px 10px 0;
-    background-color: $colour-tertiary;
-    /*height: 100%;*/
-  /*padding: 8% 7%;*/
-  /*padding: 7%;
-    right: 0;
-    visibility: hidden;
-    /*position: absolute;*/
-  /*display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.5s ease-in-out;*/
   border-radius: 0 10px 10px 0;
   background-color: #99e2d0;
-  /* height: 100%; */
-  /* padding: 8% 7%; */
-  /* padding: 7%; */
-  /* right: 0; */
-  /* visibility: hidden; */
-  /* position: absolute; */
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   transition: transform 0.5s ease-in-out;
-  /* background: #99E2D0; */
   height: 100%;
   width: 0;
-  /* border-radius: 0 10px 10px 0; */
   overflow: hidden;
   transition: width 1s;
   display: flex;
 }
 .check i {
   color: white;
-  /*height: 100%;*/
-  /* transition: transform 0.5s ease-in-out;
-  transform: rotate(360deg);*/
 }
 
 @keyframes width {
@@ -732,7 +626,6 @@ main {
     overflow: hidden;
     white-space: nowrap;
     width: 90%;
-    /*transform: 0.5s;*/
   }
 }
 /*min-width:768px*/
@@ -905,11 +798,6 @@ main {
     padding-top: 1%;
   }
 
-  .plats:hover {
-    /*& .price {
-      //   right: 30px;
-    }*/
-  }
   .plats:hover .check {
     width: 8%;
   }
@@ -1010,11 +898,6 @@ main {
     right: 7%;
   }
 
-  .plats:hover {
-    /*& .price {
-        left: 500px;
-    }*/
-  }
   .plats:hover .price {
     padding-top: 1%;
   }

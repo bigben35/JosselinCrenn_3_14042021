@@ -320,14 +320,11 @@ p {
 .check {
   border-radius: 0 10px 10px 0;
   background-color: #99e2d0;
-
   justify-content: center;
   align-items: center;
   transition: transform 0.5s ease-in-out;
-
   height: 100%;
   width: 0;
-
   overflow: hidden;
   transition: width 1s;
   display: flex;
